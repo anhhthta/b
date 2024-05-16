@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="./asset/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./asset/css/main.css">
+    </head>
+
+    <body>  
+        <header class="container-fluid header">
+            <div class="d-flex top-header">
+                <div class="logo">
+                    <a class="navbar-brand" href="javascript:void(0)">
+                        <img src="./asset/images/logo.png" alt="avt">
+                    </a>
+                </div>
+                <div>
+                    <button class="btn btn-login">
+                        <span>log in</span>
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg bottom-header">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto my_navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link my_nav-link" href="#">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link my_nav-link" href="#">GIỚI THIỆU</a>
+                            </li>  
+                            <li class="nav-item">
+                                <a class="nav-link my_nav-link" href="#">DỊCH VỤ</a>
+                            </li>  
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link my_nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">SẢN PHẨM</a>
+                                <ul class="dropdown-menu my_dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Nam</a></li>
+                                    <li><a class="dropdown-item" href="#">Nữ</a></li>
+                                    <li><a class="dropdown-item" href="#">Bé Trai</a></li>
+                                    <li><a class="dropdown-item" href="#">Bé Gái</a></li>    
+                                    <li><a class="dropdown-item" href="#">Người Già</a></li>    
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link my_nav-link" href="#">BLOG</a>
+                            </li>  
+                            <li class="nav-item">
+                                <a class="nav-link my_nav-link" href="#">LIÊN HỆ</a>
+                            </li>  
+                        </ul>
+                        <div class="d-flex">
+                            <form>
+                                <div class="d-flex my_search">
+                                    <input class="form-control my_text-search" type="text" placeholder="Search">
+                                    <button class="btn my_btn-search" type="button">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="cart mt-1">
+                                <button class="btn cart-btn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+        </header>
+
+        <div class="container-fluid content">
+            <div id="demo" class='carousel slide' data-bs-ride="carousel">
+                <div class='carousel-indicators'>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class='carousel-inner my_carousel-inner'>
+                    <div class='carousel-item my_carousel-item active'>
+                        <div class='my_img-slide my_img-1'></div>
+                        <div class='carousel-caption my_carousel-caption'>
+                            <!-- <div class='wel_com'>
+                                <p>WELCOME</p>
+                            </div>
+                            <h3>TITLE 1</h3>
+                            <p>description 1</p> -->
+                        </div>
+                    </div>
+                    <div class='carousel-item my_carousel-item '>
+                        <div class='my_img-slide my_img-2'></div>
+                        <div class='carousel-caption my_carousel-caption'>
+                            <!-- <div class='wel_com'>
+                                <p>WELCOME</p>
+                            </div>
+                            <h3>TITLE 2</h3>
+                            <p>description 2</p> -->
+                        </div>
+                    </div>
+                    <div class='carousel-item my_carousel-item '>
+                        <div class='my_img-slide my_img-3'></div>
+                        <div class='carousel-caption my_carousel-caption'>
+                            <!-- <div class='wel_com'>
+                                <p>WELCOME</p>
+                            </div>
+                            <h3>TITLE 3</h3>
+                            <p>description 3</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    class='carousel-control-prev'
+                    type="button"
+                    data-bs-target="#demo"
+                    data-bs-slide="prev"
+                >
+                    <span class='carousel-control-prev-icon'></span>
+                </button>
+                <button
+                    class='carousel-control-next'
+                    type="button"
+                    data-bs-target="#demo"
+                    data-bs-slide="next"
+                >
+                    <span class='carousel-control-next-icon'></span>
+                </button>
+            </div>
+
+            <div class="container-fluid sell">
+                <div class='row item-sell hot'>
+                    <h4>Nổi Bật</h4>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-6 first'>
+                        <div class='card item'>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-8 col-lg-9 col-xl-6'>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-4 in-item">
+                                    <div class='card item'>
+                                        <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                                        <div class='card-body text-center content'>
+                                            <button class='btn btn-buy'>
+                                                <span>Mua</span>            
+                                            </button>
+                                            <h4 class="card-title">name</h4>
+                                            <p class="card-text">price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 in-item">
+                                    <div class='card item'>
+                                        <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                                        <div class='card-body text-center content'>
+                                            <button class='btn btn-buy'>
+                                                <span>Mua</span>            
+                                            </button>
+                                            <h4 class="card-title">name</h4>
+                                            <p class="card-text">price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 in-item">
+                                    <div class='card item'>
+                                        <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                                        <div class='card-body text-center content'>
+                                            <button class='btn btn-buy'>
+                                                <span>Mua</span>            
+                                            </button>
+                                            <h4 class="card-title">name</h4>
+                                            <p class="card-text">price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 in-item">
+                                    <div class='card item'>
+                                        <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                                        <div class='card-body text-center content'>
+                                            <button class='btn btn-buy'>
+                                                <span>Mua</span>            
+                                            </button>
+                                            <h4 class="card-title">name</h4>
+                                            <p class="card-text">price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                   <div class="col-sm-12" style="padding: 15px 0;"> 
+                        <img src="./asset/images/slide-1.webp" alt="" style="width: 100%;height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+                
+                <div class='row item-sell new'>
+                    <h4>Hàng mới</h4>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row item-sell discount'>
+                    <h4>Giảm giá</h4>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <div class="amount-discount">
+                                <p>-10%</p>
+                            </div>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <div class="amount-discount">
+                                <p>-10%</p>
+                            </div>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <div class="amount-discount">
+                                <p>-10%</p>
+                            </div>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <div class="amount-discount">
+                                <p>-10%</p>
+                            </div>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <div class="amount-discount">
+                                <p>-10%</p>
+                            </div>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <div class="amount-discount">
+                                <p>-10%</p>
+                            </div>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <div class="amount-discount">
+                                <p>-10%</p>
+                            </div>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 col-md-4 col-lg-3 col-xl-2'>
+                        <div class='card item'>
+                            <div class="amount-discount">
+                                <p>-10%</p>
+                            </div>
+                            <img class='card-img-top' src='./asset/images/avatar.jpg' alt=""></img>
+                            <div class='card-body text-center content'>
+                                <button class='btn btn-buy'>
+                                    <span>Mua</span>            
+                                </button>
+                                <h4 class="card-title">name</h4>
+                                <p class="card-text">price</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid text-white policy ">
+                <h1>Chính sách</h1>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2>Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatum placeat velit delectus quis facere blanditiis culpa eos ipsa excepturi veritatis optio adipisci atque repellendus, laboriosam reiciendis consequuntur obcaecati doloremque!</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2>Title 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatum placeat velit delectus quis facere blanditiis culpa eos ipsa excepturi veritatis optio adipisci atque repellendus, laboriosam reiciendis consequuntur obcaecati doloremque!</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2>Title 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatum placeat velit delectus quis facere blanditiis culpa eos ipsa excepturi veritatis optio adipisci atque repellendus, laboriosam reiciendis consequuntur obcaecati doloremque!</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2>Title 4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatum placeat velit delectus quis facere blanditiis culpa eos ipsa excepturi veritatis optio adipisci atque repellendus, laboriosam reiciendis consequuntur obcaecati doloremque!</p>
+                    </div>
+                </div>
+                
+            </div>
+ 
+            <div class="container-fluid contect">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2>Liên hệ</h2>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2>Sản phẩm</h2>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2>BLog</h2>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h2>Chính Sách</h2>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
